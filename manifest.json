@@ -1,0 +1,37 @@
+{
+  "name": "Digipomo",
+  "version": "1.0",
+  "description": "Carbon Footprint Calculator",
+  "permissions": ["activeTab", "declarativeContent", "storage", "debugger","webNavigation"],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "web_accessible_resources": [
+    "images/carbon/DigipoAvatar@3x.png"],
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon/Logo-16x16.png",
+      "32": "images/icon/Logo-32x32.png",
+      "48": "images/icon/Logo-48x48.png",
+      "128": "images/icon/Logo-64x64.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon/Logo-16x16.png",
+    "32": "images/icon/Logo-32x32.png",
+    "48": "images/icon/Logo-48x48.png",
+    "128": "images/icon/Logo-64x64.png"
+  },
+  "content_scripts": [
+    {
+    "matches": ["https://developer.chrome.com/","https://www.youtube.com/","https://stackoverflow.com/"],
+     "js": ["content.js"],
+     "css": ["modal.css"],
+     "run_at": "document_end"
+    }
+   ],
+  "manifest_version": 2
+}

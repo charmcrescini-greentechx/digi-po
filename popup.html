@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="header-title">
+        Digital Pollution Calculator
+      </div>
+    </div>
+    <div id="calculateDone">
+      <br>
+      <div class="pomodoro-header"><label>Hi Charm</label></div>
+      <div class="pomodoro-header"><label>Welcome Back!</label></div>
+      <div class="carbon-footprint-usage-warning"><label>We peeked at the websites you used and found the following:</label></div>
+      <div class="label-3"><label>Your total GHG contribution this session:</label></div>
+      <br>
+      <div class="carbon-footprint-bg">
+        <img class="carbon-footprint-img" src="images/carbon/DigipoAvatar@3x.png">
+        <label class="carbon-footprint-total" id="totalPageGHG">100,000 GHG</label><br>
+        <label class="label-2">(GHG = Greenhouse Gas)</label>
+      </div>
+      <div class="carbon-footprint-usage"><label>That's quite a lot!</label></div>
+      <div class="carbon-footprint-usage-warning"><label>That's almost near the amount of emissions created from a regular forest fire in australia!</label></div>
+      <div class="label-3"><label>View our detailed report to see the suspects behind this carbon footprint reading.</label></div>
+      <button class="view-report-button" id="btn-report">View detailed report</button>
+      <button class="task-done-button" id="btn-pomodoro">Start Pomodoro</button>
+      <button class="see-more-tips" id="btn-green-tips">See more GreenIT Tips!</button>
+      <div class="link"><a href="https://portal.accenture.com/" target="_blank">Learn more at GreenIT.com</a></div>
+    </div>
+    <div id="calculating">
+      <div class="calculate">Calculating ...</div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
